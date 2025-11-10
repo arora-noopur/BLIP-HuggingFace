@@ -4,3 +4,10 @@ torch
 torchvision
 torchaudio
 requests
+# --- Compatibility Fix ---
+# Pinning Gradio and its dependencies to versions that
+# are known to work together and avoid the Pydantic v2 error.
+gradio==4.31.0
+huggingface_hub==0.23.4
+pydantic==2.10.6
+# --- End of Fix ---
